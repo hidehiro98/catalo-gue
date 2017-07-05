@@ -24,6 +24,7 @@ class CataloguesController < ApplicationController
   private
 
   def set_catalogue
+    @catalogue = Catalogue.find(params[:id])
   end
 
   def catalogue_params

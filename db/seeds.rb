@@ -12,6 +12,7 @@ Catalogue.destroy_all
 puts "Creating catalogues..."
 Catalogue.create(
   user: User.first,
+  name: "Catalogue from seeds",
   rank1: "https://unsplash.it/800/539",
   rank2: "https://unsplash.it/800/539",
   rank3: "https://unsplash.it/800/539",
