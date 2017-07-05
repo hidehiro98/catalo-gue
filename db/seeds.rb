@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cleaning catalogues..."
+Catalogue.destroy_all
+
+puts "Creating catalogues..."
+Catalogue.create(
+  user: User.first,
+  rank1: "https://unsplash.it/800/539",
+  rank2: "https://unsplash.it/800/539",
+  rank3: "https://unsplash.it/800/539",
+  rank4: "https://unsplash.it/800/539",
+  rank5: "https://unsplash.it/800/539",
+  rank6: "https://unsplash.it/800/539",
+  rank7: "https://unsplash.it/800/539"
+  )
+
+puts "Finished!"
