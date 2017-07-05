@@ -3,13 +3,14 @@
     <div class="col-md-offset-3 col-md-6">
       <h2>Create catalogue</h2>
       <%= simple_form_for @catalogue do |f| %>
-        <%= f.input :rank1 %>
-        <%= f.input :rank2 %>
-        <%= f.input :rank3 %>
-        <%= f.input :rank4 %>
-        <%= f.input :rank5 %>
-        <%= f.input :rank6 %>
-        <%= f.input :rank7 %>
+        <%= f.input :name%>
+        <%= f.input :rank1, placeholder: "Paste URL" %>
+        <%= f.input :rank2, placeholder: "Paste URL" %>
+        <%= f.input :rank3, placeholder: "Paste URL" %>
+        <%= f.input :rank4, placeholder: "Paste URL" %>
+        <%= f.input :rank5, placeholder: "Paste URL" %>
+        <%= f.input :rank6, placeholder: "Paste URL" %>
+        <%= f.input :rank7, placeholder: "Paste URL" %>
         <%= f.submit "Create catalogue", class: "btn btn-primary" %>
       <% end %>
     </div>
